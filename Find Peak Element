@@ -1,0 +1,13 @@
+public class GFG {
+ 
+    // Utility method to compute cost, when
+    // all values of array are made equal to X
+    public static int computeCost(int arr[], int N,
+                                  int X)
+    {
+        int cost = 0;
+        for (int i = 0; i < N; i++)
+            cost += Math.abs(arr[i] - X);
+        return cost;
+    }
+ 
